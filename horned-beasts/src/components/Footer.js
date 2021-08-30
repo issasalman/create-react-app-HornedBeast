@@ -5,15 +5,15 @@ class Footer extends React.Component {
 
   render() {
     return (
-     <footer>
+      <footer>
     
-     <h1>
-     Issa Salman 2021 ASAC
-     </h1>
+        <h1>
+        Issa Salman 2021 ASAC
+        </h1>
     
-     </footer>
+      </footer>
      
-    )
+    );
   }
 }
 

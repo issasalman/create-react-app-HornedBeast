@@ -11,14 +11,14 @@ class App extends React.Component {
     return (
       <div>
       
-      <Header />
+        <Header />
         <Main />
         <Footer />
         
        
        
       </div>
-    )
+    );
   }
 }
 
