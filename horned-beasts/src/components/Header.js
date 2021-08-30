@@ -5,14 +5,14 @@ class Header extends React.Component {
 
   render() {
     return (
-     <header>
+      <header>
    
-     <h1>
+        <h1>
      HornedBeast
-     </h1>
+        </h1>
     
-     </header>
-    )
+      </header>
+    );
   }
 }
 
