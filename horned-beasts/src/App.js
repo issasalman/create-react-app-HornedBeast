@@ -1,4 +1,4 @@
-import React from 'react'; // we are adding the react library into our App component
+import React from 'react'; 
 
 import Header from './components/Header';
 import Main from './components/Main';
@@ -14,6 +14,7 @@ class App extends React.Component {
       <Header />
         <Main />
         <Footer />
+        
        
        
       </div>
