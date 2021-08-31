@@ -1,19 +1,15 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 
 
 class HornedBeasts extends React.Component {
 
-  
-
-  
   constructor(props) {
     super(props);
     this.state = {
       numOfHornedVotes: 0
        
-
     };
   }
   increaseHorneVotes = () => {
@@ -22,9 +18,14 @@ class HornedBeasts extends React.Component {
       
     });
     
-
+    this.updateSelected();
+    
   }
  
+  updateSelected = () => {
+    this.props.showModal(this.props.title);
+  }
+  
 
   render() {
 
@@ -51,6 +52,7 @@ class HornedBeasts extends React.Component {
         hi}
      }; */}
             </Card.Text>
+            <Button onClick={this.increaseHorneVotes}>Click here or on Image to see more Details</Button>
           </Card.Body>
         </Card>
       </div>
@@ -60,4 +62,3 @@ class HornedBeasts extends React.Component {
 
 
 export default HornedBeasts;
-
