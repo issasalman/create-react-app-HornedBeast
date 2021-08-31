@@ -5,14 +5,14 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div >
-        {Horned.map((item,index)=>{
+      <main >
+        {Horned.map(item=>{
           return(
-            <HornedBeasts  title={item.title} desc={item.description} image_url={item.image_url} key={index} horns={item.horns} />
+            <HornedBeasts  title={item.title} desc={item.description} image_url={item.image_url}  horns={item.horns} alt={item.keyword} />
           );
         })}
 
-      </div>
+      </main>
     );
   }
 }
