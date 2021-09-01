@@ -16,14 +16,14 @@ class App extends React.Component {
   }
 
   showModal = (title) => {
-    let selectedArr = Horned.find((element) => {
+    let selectedArr = Horned.filter((element) => {
       return (element.title === title);
      
     });
 
     this.setState({
       show: true,
-      theSelectedOne: selectedArr,
+      theSelectedOne: selectedArr[0],
     });
     return selectedArr;
   };
