@@ -11,6 +11,7 @@ class HornedBeasts extends React.Component {
       numOfHornedVotes: 0
        
     };
+    
   }
   increaseHorneVotes = () => {
     this.setState({
@@ -18,13 +19,15 @@ class HornedBeasts extends React.Component {
       
     });
     
-    this.updateSelected();
+
+    this.props.showModal(this.props.title);
+    // this.updateSelected();
     
   }
  
-  updateSelected = () => {
-    this.props.showModal(this.props.title);
-  }
+  // updateSelected = () => {
+  //   this.props.showModal(this.props.title);
+  // }
   
 
   render() {
