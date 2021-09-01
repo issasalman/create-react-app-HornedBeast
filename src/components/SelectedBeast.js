@@ -17,7 +17,7 @@ class SelectedBeast extends React.Component {
             <Card.Img
               variant="top"
               src={this.props.theSelectedOne.image_url}
-              alt={this.props.title}
+              alt={this.props.theSelectedOne.title}
             />
             <Card.Text>{this.props.theSelectedOne.description}</Card.Text>
 
