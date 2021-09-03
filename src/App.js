@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SelectedBeast from "./components/SelectedBeast.js";
 import Horned from "./assets/data.json";
-console.log(Horned);
+// console.log(Horned);
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -31,6 +31,7 @@ class App extends React.Component {
   handleClose = () => {
     this.setState({ show: !this.state.show });
   };
+  
 
   render() {
     return (

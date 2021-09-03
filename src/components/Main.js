@@ -7,39 +7,24 @@ import Row from "react-bootstrap/Row";
 class Main extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      RenderedHorne: Horned,
+      data: Horned,
     };
   }
 
-  filterHorn = (event) => {
-    let value = parseInt(event.target.value);
-
-  
-
-    let filteredArray = Horned.filter((element) => {
-      if (element.horns === value) {
-        return true;
-      }
-    });
-    this.setState({
-      RenderedHorne: filteredArray,
-    });
-    
-    if (value === 0) {
-      this.setState({
-        RenderedHorne: Horned,
-      });
-    }
-  
+  handleCallback = (childData) => {
+    this.setState({ data: childData });
+    console.log("data",childData );
   };
   render() {
+    const { data } = this.state;
+   
     return (
       <main>
-        <HornForm filterHorn={this.filterHorn} />
+        <HornForm parentCallback={this.handleCallback} />
+
         <Row xs={1} md={3} className="g-4">
-          {this.state.RenderedHorne.map((item) => {
+          {data.map((item) => {
             return (
               <HornedBeasts
                 title={item.title}
